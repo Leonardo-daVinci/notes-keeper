@@ -17,7 +17,13 @@ class _NoteDetailState extends State<NoteDetail> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Edit Note'),
+        title: Text('Add Note'),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back_ios),
+          onPressed: (){
+            Navigator.pop(context);
+          },
+        ),
       ),
 
       body: Padding(
@@ -40,6 +46,7 @@ class _NoteDetailState extends State<NoteDetail> {
                     style: textstyle,
                     onChanged: (value){
                       setState(){
+
                       }
                     },
                   ),
